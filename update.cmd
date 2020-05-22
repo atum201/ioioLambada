@@ -1,2 +1,5 @@
-E:
-cd E:\3.Git\2.BitBucket\1.Note
+node index.js
+cd zip
+7z a ioioLambdaBasicCG.zip index.js
+aws lambda update-function-code --function-name ioioLambdaBasicCG  --zip-file fileb://ioioLambdaBasicCG.zip
+cd ..
