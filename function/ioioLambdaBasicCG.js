@@ -3,7 +3,8 @@ const ddb = new AWS.DynamoDB.DocumentClient();
 var TableName = "ioioG";
 var AttributesToGet = ["id","c","p","l"];
 exports.handler = (event,context) => { // event: p,g
-    console.log("event starting here")
+    console.log("event 1111111111111")
+    console.log("event 1111111111111")
     if(!V(event))
         context.succeed({error:0})
     F(event.g).then((d)=>{
